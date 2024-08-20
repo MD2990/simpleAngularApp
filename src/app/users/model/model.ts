@@ -1,6 +1,14 @@
 export interface User {
-  userId?: number;
+  name?: string;
   id?: number;
-  title?: string;
-  completed?: boolean;
+  username?: string;
+  address?: string;
+  email?: string;
+}
+
+export interface data {
+  userId: 120;
+  id: 125;
+  title: 'sample title';
+  completed: true;
 }

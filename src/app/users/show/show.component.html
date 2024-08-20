@@ -3,15 +3,21 @@
 	<div class="card">
 		<div class="card-header">
 			<h3>Users</h3>
+
+			
 			<div *ngIf="loading">
 				<h3>Loading ...</h3>
 			</div>
 			<h3 *ngIf="error">{{error}}</h3>
 			<div *ngFor="let item of user">
-				<p>{{item.title}}</p>
-				<p>{{item.id}}</p>
-				<p>{{item.userId}}</p>
-				<p>{{item.completed}}</p>
+
+
+				<p>{{item.id | currency}}</p>
+				<p>{{item.name}}</p>
+				<p>{{item.email }}</p>
+				<p>{{item.address }}</p>
+
+				<a routerLink="/">Home</a>
 			</div>
 		</div>
 
@@ -20,3 +26,5 @@
 
 
 </div>
+
+

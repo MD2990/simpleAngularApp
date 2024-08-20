@@ -10,7 +10,7 @@ export class UserService {
   constructor(private http: HttpClient) {}
 
   getUsers(): Observable<Array<User>> {
-    const url = 'https://jsonplaceholder.typicode.com/posts';
+    const url = 'https://jsonplaceholder.typicode.com/users';
     return this.http.get<Array<User>>(url);
   }
 }
